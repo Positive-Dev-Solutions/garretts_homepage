@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # PositivedevsolutionsHomepage
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# garretts_homepage
+Garrett's initial version of our homepage. It's just a start!
+>>>>>>> f787b4cbb14ad14152554489564b11ff77e7be2d
