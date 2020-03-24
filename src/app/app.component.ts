@@ -6,5 +6,5 @@ import { Component, NgModule } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'positivedevsolutions-homepage';
+  title = 'Positive Dev Solutions';
 }

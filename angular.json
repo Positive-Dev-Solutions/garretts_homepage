@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "positivedevsolutions-homepage": {
+    "positivedevsolutions": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/positivedevsolutions-homepage",
+            "outputPath": "dist/positivedevsolutions",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "positivedevsolutions-homepage:build"
+            "browserTarget": "positivedevsolutions:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "positivedevsolutions-homepage:build:production"
+              "browserTarget": "positivedevsolutions:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "positivedevsolutions-homepage:build"
+            "browserTarget": "positivedevsolutions:build"
           }
         },
         "test": {
@@ -114,18 +114,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "positivedevsolutions-homepage:serve"
+            "devServerTarget": "positivedevsolutions:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "positivedevsolutions-homepage:serve:production"
+              "devServerTarget": "positivedevsolutions:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "positivedevsolutions-homepage",
+  "defaultProject": "positivedevsolutions",
   "cli": {
     "analytics": "e0b02fb9-aaaf-4a5d-8f52-b3ef6c030a8b"
   }
