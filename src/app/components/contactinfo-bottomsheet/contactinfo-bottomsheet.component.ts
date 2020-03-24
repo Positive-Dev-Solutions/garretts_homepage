@@ -36,13 +36,17 @@ export class ContactInfoBottomSheet implements OnInit {
   ngOnInit(): void {
   }
 
-  copyContact(input: any): void {
+  copyContact(spanId: string): void {
     this._bottomSheetRef.dismiss();
-
-    // input.select();
-    // document.execCommand('copy');
-    // input.setSelectionRange(0,0);
-    // alert(input.val() + ' copied to clipboard.');
-    // //event.preventDefault();
+     
+    var span = document.getElementById(spanId);
+    var textarea = document.createElement("textarea");
+    textarea.value = span.textContent;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    textarea.setSelectionRange(0,0);
+    textarea.remove();
+    alert(span.textContent + ' copied to clipboard.');
   }
 }
