@@ -12,8 +12,15 @@
 
 
 .logo{
+    position: absolute;
     cursor: pointer;
  }
+
+ @media only screen and (max-width: 600px) {
+    .logo {
+        right: 10px;
+    }
+  }
 
  //spin the logo
  @media (prefers-reduced-motion: no-preference){
