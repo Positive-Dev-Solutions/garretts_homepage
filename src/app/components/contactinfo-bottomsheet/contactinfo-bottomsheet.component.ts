@@ -16,11 +16,9 @@ export class ContactinfoBottomsheetComponent implements OnInit {
 
   openBottomSheet(): void {
     if(this._bottomSheet._openedBottomSheetRef){
-      console.log('dismissing sheet');
       this._bottomSheet.dismiss();
     }
     else{
-      console.log('opening sheet');
       this._bottomSheet.open(ContactInfoBottomSheet);
     }
   }
@@ -39,9 +37,6 @@ export class ContactInfoBottomSheet implements OnInit {
   }
 
   copyContact(input: any): void {
-    
-    console.log("copyContact");
-    console.log(input);
     this._bottomSheetRef.dismiss();
 
     // input.select();
