@@ -6,3 +6,37 @@
     background-color:transparent;
     top:0;
 }
+
+.hamburger-menu {
+    height: 52px;
+    width: 30px;
+    position: absolute;
+    right: 40px;
+    top:30px;
+    background-color: #a8a8caff;
+    border: 3px solid white;
+    border-radius: 5px;
+    text-align:center;
+    cursor: pointer;
+}
+
+.cheese {
+    width: 19px;
+    height: 3px;
+    background-color: white;
+    z-index: 99;
+    display: inline-block;
+}
+.condiments {
+    display: none;
+}
+
+.hamburger-meat{
+    position: absolute;
+    right:40px;
+    top:30px;
+}
+
+.expand{
+    display: block !important;
+}
