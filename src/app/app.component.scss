@@ -40,9 +40,11 @@
     width:100% !important;
     height:100% !important;
     // margin-top:-800px;
+    content:url('../assets/images/PosDev_BackgroundImage.svg');
   }
 
   .powershellHeader{ 
+    z-index: 1;
     margin: 30px;
     position: absolute;
     background-color: lightgray;
@@ -68,13 +70,6 @@
     padding:10px;
     font-size: x-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-  @media only screen and (max-width: 600px){
-    .powershellHeader{
-      right: 5px;
-      top: 100px;
-    }
   }
 
   svg.material-icons {
@@ -292,5 +287,14 @@
     svg#rocket-smoke {
       display: none;
       visibility: hidden;
+    }
+
+    .powershellHeader{
+      right: 5px;
+      top: 100px;
+    }
+
+    .backgroundImg{
+      content:url('../assets/images/PosDev_BackgroundImage_Mobile.svg');
     }
   }
