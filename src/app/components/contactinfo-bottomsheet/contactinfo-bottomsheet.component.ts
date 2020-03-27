@@ -3,7 +3,7 @@ import { MatBottomSheet, MatBottomSheetRef } from '@angular/material/bottom-shee
 
 @Component({
   selector: 'contactinfo-bottomsheet-component',
-  templateUrl: './contactinfo-bottomsheet.component.html',
+  templateUrl: './contactinfo-bottomsheet-header-logo.component.html',
   styleUrls: ['./contactinfo-bottomsheet.component.scss']
 })
 

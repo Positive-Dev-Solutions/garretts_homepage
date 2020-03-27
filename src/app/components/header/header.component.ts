@@ -1,5 +1,6 @@
 import { Component, OnInit, NgModule  } from '@angular/core';
-import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { BusinessInquiryComponent } from '../business-inquiry/business-inquiry.component';
 
 @Component({
   selector: 'app-header',
@@ -7,13 +8,16 @@ import { ITS_JUST_ANGULAR } from '@angular/core/src/r3_symbols';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  public bsModalRef: BsModalRef;
 
-  constructor() { 
-
+  constructor(private _bsModalService: BsModalService) { 
   }
 
-  expandMenu() {
-    //var hamburgerBtn = document.getElementById('hamburgerBtn');
+  ngOnInit(): void {
+  }
+
+  
+  expandMenu(): void {
     var condiments = document.getElementsByClassName('condiments');
     for(let i = 0; i < condiments.length; i++){
       if(condiments[i].classList.contains('expand')){
@@ -24,6 +28,12 @@ export class HeaderComponent implements OnInit {
       }
     }
   }
-  ngOnInit(): void {
+
+  showBizInquiry(): void {
+    this.expandMenu();
+    this.bsModalRef = this._bsModalService.show(BusinessInquiryComponent);
+    this.bsModalRef.content.onClose.subscribe(result => {
+      console.log("results", result);
+    });
   }
 }

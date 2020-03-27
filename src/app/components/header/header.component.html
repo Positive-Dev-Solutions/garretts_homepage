@@ -1,18 +1,20 @@
-<div class="fixed-header logo" role="banner">
+<div class="fixed-header" role="banner">
     <div class="mat-app-background">
       <contactinfo-bottomsheet-component></contactinfo-bottomsheet-component>
     </div>
-    <div class="hamburger-menu">
-      <div (click)="expandMenu()">
-        <span class="cheese" style="margin-bottom:1px;"></span>
-        <span class="cheese" style="margin-bottom:6px;"></span>
-        <span class="cheese" style="margin-bottom:20px;"></span>
+    <div class="hamburger-bun">
+      <div class="cheese" (click)="expandMenu()">
+        <span style="margin-bottom:-9px;"></span>
+        <span></span>
+        <span style="margin-bottom:9px;"></span>
       </div>
       <div class="condiments"> 
         <ul class="hamburger-meat">
-          <li><button>New Business Inquiry</button></li>
+          <li><button (click)="showBizInquiry()" data-toggle="modal" data-target="#bizModal">Business Inquiry</button></li>
         </ul>
       </div>
     </div>
 </div>
-  
+<div style="display: none;">
+  <business-inquiry></business-inquiry>
+</div>  
